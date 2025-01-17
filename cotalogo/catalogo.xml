@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog SYSTEM "catalogo.dtd">
+<catalog>
+    <llista_actors>
+        <actor id="actor1">
+            <nom>John Doe</nom>
+            <edat>30</edat>
+        </actor>
+        <actor id="actor2">
+            <nom>Jane Smith</nom>
+        </actor>
+        <actor id="actor3">
+            <nom>Bob Johnson</nom>
+            <edat>45</edat>
+        </actor>
+    </llista_actors>
+    
+    <llista_pelicules>
+        <pelicula id="pelicula1">
+            <titol idioma="es">El Gran Robo</titol>
+            <director>Steven Spielberg</director>
+            <any>1993</any>
+            <actors>
+                <actor_ref ref="actor1"/>
+                <actor_ref ref="actor2"/>
+            </actors>
+            <entrada gratuita="si">0,0</entrada>
+        </pelicula>
+        <pelicula id="pelicula2">
+            <titol idioma="en">The Matrix</titol>
+            <director>Wachowski Sisters</director>
+            <any>1999</any>
+            <actors>
+                <actor_ref ref="actor2"/>
+                <actor_ref ref="actor3"/>
+            </actors>
+            <entrada gratuita="no">16,5</entrada> 
+        </pelicula>
+    </llista_pelicules>
+    
+    <llista_recomanacions_pelicules>
+        <recomanacio ref="pelicula1"/>
+        <recomanacio ref="pelicula2"/>
+    </llista_recomanacions_pelicules>
+</catalog>
