@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalog [
 <!ELEMENT catalog (llista_actors, llista_pelicules, llista_recomanacions_pelicules)>
 
 <!ELEMENT llista_actors (actor+)>
@@ -15,12 +17,11 @@
 <!ELEMENT any (#PCDATA)>
 <!ELEMENT actors (actor_ref+)>
 <!ELEMENT actor_ref EMPTY>
-
 <!ATTLIST actor_ref ref IDREF #REQUIRED>
 <!ELEMENT entrada (#PCDATA)>
 <!ATTLIST entrada gratuita (si | no) "si">
 
 <!ELEMENT llista_recomanacions_pelicules (recomanacio*)>
 <!ELEMENT recomanacio EMPTY>
-
 <!ATTLIST recomanacio ref IDREF #REQUIRED>
+]>
